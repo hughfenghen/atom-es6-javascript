@@ -1,10 +1,10 @@
-".source.js":
+".source.js, .source.ts, .source.tsx":
   "forEach loop":
     prefix: "fe"
     body: """
     ${1:iterable}.forEach((${2:item}) => {
     \t${0}
-    });
+    })
     """
   "chain forEach":
     prefix: ".fe"
@@ -14,7 +14,7 @@
     body: """
     ${1:iterable}.map((${2:item}) => {
     \t${0}
-    });
+    })
     """
   "chain map":
     prefix: ".map"
@@ -24,7 +24,7 @@
     body: """
     ${1:iterable}.reduce((${2:p}, ${3:c}) => {
     \t${0}
-    }${4:, initial});
+    }${4:, initial})
     """
   "chain reduce":
     prefix: ".reduce"
@@ -34,7 +34,7 @@
     body: """
     ${1:iterable}.filter((${2:item}) => {
     \t${0}
-    });
+    })
     """
   "chain filter":
     prefix: ".filter"
@@ -44,7 +44,7 @@
     body: """
     ${1:iterable}.find((${2:item}) => {
     \t${0}
-    });
+    })
     """
   "chain find":
     prefix: ".find"

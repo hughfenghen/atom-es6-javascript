@@ -1,22 +1,22 @@
-".source.js":
+".source.js, .source.ts, .source.tsx":
   "setTimeout":
     prefix: "st"
     body: """
     setTimeout(() => {
     \t${0}
-    }, ${1:delay});
+    }, ${1:delay})
     """
   "setInterval":
     prefix: "si"
     body: """
     setInterval(() => {
     \t${0}
-    }, ${1:delay});
+    }, ${1:delay})
     """
   "setImmediate":
     prefix: "sim"
     body: """
     setImmediate(() => {
     \t${0}
-    });
+    })
     """

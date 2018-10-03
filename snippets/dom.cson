@@ -1,10 +1,10 @@
-".source.js":
+".source.js, .source.ts, .source.tsx":
   "addEventListener":
     prefix: "ae"
     body: """
     ${1:document}.addEventListener('${2:event}', function (e) {
     \t${0}
-    });
+    })
     """
   "getElementById":
     "prefix": "gi"
